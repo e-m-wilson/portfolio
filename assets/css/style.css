@@ -1,10 +1,81 @@
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu&display=swap");
 * {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   margin: 0;
   padding: 0;
+  font-family: 'Ubuntu', sans-serif;
 }
 
 html {
   scroll-behavior: smooth;
+}
+
+#home {
+  height: 100vh;
+  background: #333;
+  color: #f4f4f4;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 2rem;
+  text-align: center;
+  line-height: 1.6;
+  padding: 0 20px;
+}
+
+#home #nameHighlight {
+  color: #858dff;
+}
+
+#home button {
+  margin-top: 20px;
+  padding: 10px;
+  font-size: 1.2rem;
+  cursor: pointer;
+  border: 5px solid #858dff;
+  -webkit-transition: background-color 1s, color 1s;
+  transition: background-color 1s, color 1s;
+}
+
+#home button:hover {
+  background-color: #858dff;
+  color: #f4f4f4;
+}
+
+nav {
+  background-color: #333;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 6vh;
+  padding: 0 30px;
+  border-bottom: 5px solid #858dff;
+  font-size: 1.2rem;
+}
+
+nav a {
+  color: #f4f4f4;
+  text-decoration: none;
+  -webkit-transition: color 0.5s;
+  transition: color 0.5s;
+}
+
+nav a:hover {
+  color: #858dff;
 }
