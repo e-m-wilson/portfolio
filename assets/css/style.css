@@ -31,24 +31,27 @@ html {
   font-size: 2rem;
   text-align: center;
   line-height: 1.6;
-  padding: 0 20px;
+  padding: 0 5%;
 }
 
 #home #nameHighlight {
   color: #858dff;
 }
 
-#home button {
+#home a {
   margin-top: 20px;
   padding: 10px;
   font-size: 1.2rem;
+  text-decoration: none;
+  color: #333;
   cursor: pointer;
+  background-color: #f4f4f4;
   border: 5px solid #858dff;
   -webkit-transition: background-color 1s, color 1s;
   transition: background-color 1s, color 1s;
 }
 
-#home button:hover {
+#home a:hover {
   background-color: #858dff;
   color: #f4f4f4;
 }
@@ -64,7 +67,7 @@ nav {
       -ms-flex-align: center;
           align-items: center;
   height: 6vh;
-  padding: 0 30px;
+  padding: 0 5%;
   border-bottom: 5px solid #858dff;
   font-size: 1.2rem;
 }
@@ -78,4 +81,46 @@ nav a {
 
 nav a:hover {
   color: #858dff;
+}
+
+.contentSection {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 5%;
+}
+
+.contentSection .contentHeading {
+  text-transform: uppercase;
+}
+
+.contentSection #aboutContent {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 5%;
+}
+
+.contentSection #aboutContent #aboutShowcase {
+  padding: 5%;
+}
+
+.contentSection #aboutContent p {
+  padding: 5%;
 }
