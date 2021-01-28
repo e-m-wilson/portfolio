@@ -5,15 +5,39 @@
   margin: 0;
   padding: 0;
   font-family: 'Ubuntu', sans-serif;
-}
-
-html {
   scroll-behavior: smooth;
 }
 
-#home {
+.removed {
+  -webkit-animation: slideSplash 1s;
+          animation: slideSplash 1s;
+}
+
+@-webkit-keyframes slideSplash {
+  50% {
+    -webkit-transform: translateX(-5%);
+            transform: translateX(-5%);
+  }
+  100% {
+    -webkit-transform: translateX(300%);
+            transform: translateX(300%);
+  }
+}
+
+@keyframes slideSplash {
+  50% {
+    -webkit-transform: translateX(-5%);
+            transform: translateX(-5%);
+  }
+  100% {
+    -webkit-transform: translateX(300%);
+            transform: translateX(300%);
+  }
+}
+
+#splash {
   height: 100vh;
-  background: #333;
+  background: #4C57D4;
   color: #f4f4f4;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -34,30 +58,28 @@ html {
   padding: 0 5%;
 }
 
-#home #nameHighlight {
-  color: #858dff;
+#splash #nameHighlight {
+  color: #A8B0FF;
 }
 
-#home a {
+#splash a {
   margin-top: 20px;
-  padding: 10px;
+  padding: 20px;
   font-size: 1.2rem;
-  text-decoration: none;
-  color: #333;
   cursor: pointer;
-  background-color: #f4f4f4;
-  border: 5px solid #858dff;
+  background-color: #A8B0FF;
+  color: #f4f4f4;
   -webkit-transition: background-color 1s, color 1s;
   transition: background-color 1s, color 1s;
 }
 
-#home a:hover {
-  background-color: #858dff;
-  color: #f4f4f4;
+#splash a:hover {
+  background-color: #f4f4f4;
+  color: #4C57D4;
 }
 
 nav {
-  background-color: #333;
+  background-color: #4C57D4;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -68,7 +90,7 @@ nav {
           align-items: center;
   height: 6vh;
   padding: 0 5%;
-  border-bottom: 5px solid #858dff;
+  border-bottom: 5px solid #A8B0FF;
   font-size: 1.2rem;
 }
 
@@ -80,10 +102,10 @@ nav a {
 }
 
 nav a:hover {
-  color: #858dff;
+  color: #A8B0FF;
 }
 
-.contentSection {
+.container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -97,14 +119,18 @@ nav a:hover {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin: 5%;
+  width: 80%;
+  margin: auto;
+  padding: 5%;
 }
 
-.contentSection .contentHeading {
+.container .contentHeading {
+  margin: 5% 0;
   text-transform: uppercase;
+  letter-spacing: 1rem;
 }
 
-.contentSection #aboutContent {
+.container #aboutContent {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -114,13 +140,4 @@ nav a:hover {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding: 5%;
-}
-
-.contentSection #aboutContent #aboutShowcase {
-  padding: 5%;
-}
-
-.contentSection #aboutContent p {
-  padding: 5%;
 }

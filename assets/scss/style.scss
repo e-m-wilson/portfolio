@@ -6,13 +6,19 @@
   margin: 0;
   padding: 0;
   font-family: 'Ubuntu', sans-serif;
-}
-
-html {
   scroll-behavior: smooth;
 }
 
-#home {
+.removed {
+  animation: slideSplash 1s;
+}
+
+@keyframes slideSplash {
+  50% {transform: translateX(-5%)}
+  100% {transform: translateX(300%)}
+}
+
+#splash {
   height: 100vh;
   background: $primary-color;
   color: $off-white-color;
@@ -31,19 +37,17 @@ html {
 
   a {
     margin-top: 20px;
-    padding: 10px;
+    padding: 20px;
     font-size: 1.2rem;
-    text-decoration: none;
-    color: $primary-color;
     cursor: pointer;
-    background-color: $off-white-color;
-    border: 5px solid $secondary-color; 
+    background-color: $secondary-color;
+    color: $off-white-color;
     transition: background-color 1s, color 1s;
   }
 
   a:hover {
-    background-color: $secondary-color;
-    color: $off-white-color;
+    background-color: $off-white-color;
+    color: $primary-color;
   }
 }
 
@@ -68,30 +72,25 @@ nav {
   }
 }
 
-.contentSection {
+.container {
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
   align-items: center;
-  margin: 5%;
+  width: 80%;
+  margin: auto;
+  padding: 5%;
 
   .contentHeading {
+    margin: 5% 0;
     text-transform: uppercase;
+    letter-spacing: 1rem;
   }
 
   #aboutContent {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-    padding: 5%;
-
-    #aboutShowcase {
-      padding: 5%;
-    }
-
-    p {
-      padding: 5%;
-    }
   }
 }
 

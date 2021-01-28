@@ -9,31 +9,35 @@
 		<meta name="author" content="Ethan Wilson">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<link rel="stylesheet" href="assets/css/style.css">
-		<script src="assets/index.js" defer></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js" defer></script>
+		<script src="assets/scripts/index.js" defer></script>
 	</head>
 
 	<body>
 
-		<section id="home">
+		<div id="splash">
 			<div>Hi! I'm <span id="nameHighlight">Ethan Wilson</span>, a web developer and data scientist.</div>
-			<a href="#aboutContent">Let's get to work.</a>
-		</section>
+			<a class="btn" id="start">Let's get to work.</a>
+		</div>
 
 		<nav>
-			<a href="#home">Home</a>
 			<a href="#aboutContent">About</a>
 			<a href="#portfolioContent">Portfolio</a>
 			<a href="#contactContent">Contact</a>
 		</nav>
 
-		<section class="contentSection">
-			<h2 class="contentHeading">About</h2>
+		
+		<div class="container">
+
+			<h1 class="contentHeading">About</h1>
 			<div id="aboutContent">
+
 				<div id="aboutShowcase">
 					<p>PLACEHOLDER</p>
 				</div>
+
 				<p>Welcome! I recently graduated with 
-					 a Bachelor of Science degree in 
+						a Bachelor of Science degree in 
 					Information Science from the University of Arkansas
 					at Little Rock. Currently, I've been working
 					for Walmart as an electronics associate for over 
@@ -41,18 +45,21 @@
 					take a look at my projects below.
 				</p>
 			</div>
-		</section>
+		
 
-		<section class="contentSection">
-			<h2 class="contentHeading">Portfolio</h2>
-			<div id="portfolioContent"></div>
-		</section>
+		
+			<h1 class="contentHeading">Portfolio</h1>
+			<div id="portfolioContent">
 
-		<section class="contentSection">
-			<h2 class="contentHeading">Contact</h2>
-			<div id="contactContent"></div>
-		</section>
+			</div>
+			
 
+			
+			<h1 class="contentHeading">Contact</h1>
+			<div id="contactContent">
+
+			</div>
+		</div>
 	</body>
 
 </html>
