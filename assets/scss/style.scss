@@ -81,16 +81,51 @@ nav {
   margin: auto;
   padding: 5%;
 
+  img {
+    width: 150px;
+    height: 150px;
+  }
+
   .contentHeading {
     margin: 5% 0;
     text-transform: uppercase;
     letter-spacing: 1rem;
+    text-align: center;
   }
 
   #aboutContent {
-    display: grid;
-    justify-content: space-evenly;
+    display: flex;
+    justify-content: space-around;
     align-items: center;
+    flex-wrap: wrap;
+
+    p {
+      max-width: 50%;
+    }
+   
   }
+
+  #showcase {
+    display: flex;
+    width: 100%;
+    margin: 5% 0;
+    padding: 5%;
+    justify-content: space-around;
+    align-items: center;
+    
+    .showcaseBullet {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      align-items: center;
+      margin: 0 5%;
+      text-align: center;
+
+      p {
+        margin: 30px 0;
+      }
+    }
+  }
+
 }
 

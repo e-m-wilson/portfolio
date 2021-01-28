@@ -1,12 +1,11 @@
 "use strict";
 
 
-$("#start").click(openPage);
+document.querySelector('#start').addEventListener('click', openPage);
 
 function openPage () {
-    $("#splash").addClass("removed");
-    $("#splash").on("animationend", () => {
-        $("#splash").hide();
-    });
+    document.querySelector('#splash').className = 'removed';
+    document.querySelector('#splash').addEventListener('animationend', () => 
+    document.querySelector('#splash').remove());
 }
 
