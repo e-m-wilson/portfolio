@@ -1,0 +1,131 @@
+@import "config";
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Ubuntu', sans-serif;
+  scroll-behavior: smooth;
+}
+
+.removed {
+  animation: slideSplash 1s;
+}
+
+@keyframes slideSplash {
+  50% {transform: translateX(-5%)}
+  100% {transform: translateX(300%)}
+}
+
+#splash {
+  height: 100vh;
+  background: $primary-color;
+  color: $off-white-color;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 2rem;
+  text-align: center;
+  line-height: 1.6;
+  padding:  0 5%;
+
+  #nameHighlight {
+    color: $secondary-color;
+  }
+
+  a {
+    margin-top: 20px;
+    padding: 20px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    background-color: $secondary-color;
+    color: $off-white-color;
+    transition: background-color 1s, color 1s;
+  }
+
+  a:hover {
+    background-color: $off-white-color;
+    color: $primary-color;
+  }
+}
+
+nav {
+  background-color: $primary-color;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 6vh;
+  padding: 0 5%;
+  border-bottom: 5px solid $secondary-color;
+  font-size: 1.2rem;
+  
+  a {
+    color: $off-white-color;
+    text-decoration: none;
+    transition: color 0.5s;
+  }
+
+  a:hover {
+    color: $secondary-color;
+  }
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 80%;
+  margin: auto;
+  padding: 5%;
+
+  img {
+    width: 150px;
+    height: 150px;
+  }
+
+  .contentHeading {
+    margin: 5% 0;
+    text-transform: uppercase;
+    letter-spacing: 1rem;
+    text-align: center;
+  }
+
+  #aboutContent {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+
+    p {
+      max-width: 50%;
+    }
+   
+  }
+
+  #showcase {
+    display: flex;
+    width: 100%;
+    margin: 5% 0;
+    padding: 5%;
+    justify-content: space-around;
+    align-items: center;
+    
+    .showcaseBullet {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      align-items: center;
+      margin: 0 5%;
+      text-align: center;
+
+      p {
+        margin: 30px 0;
+      }
+    }
+  }
+
+}
+
