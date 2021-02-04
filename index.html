@@ -8,33 +8,33 @@
 		<meta name="description" content="Portfolio of Ethan Wilson">
 		<meta name="author" content="Ethan Wilson">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<link rel="stylesheet" href="assets/css/style.css">
+		<link rel="stylesheet" href="assets\styles\css\style.css">
 		<script src="assets/scripts/index.js" defer></script>
 	</head>
 
 	<body>
 
 		<div id="splash">
-			<div>Hi! I'm <span id="nameHighlight">Ethan Wilson</span>, a web developer and data scientist.</div>
+			<div>Hi! I'm Ethan Wilson, a web developer and aspiring data scientist.</div>
 			<a class="btn" id="start">Let's get to work.</a>
 		</div>
 
-		<nav>
-			<a href="#aboutContent">About</a>
-			<a href="#portfolioContent">Portfolio</a>
-			<a href="#contactContent">Contact</a>
+		<nav id="navBar">
+			<a href="#top">About</a>
+			<a href="#portfolioHeading">Portfolio</a>
+			<a href="#contactHeading">Contact</a>
 		</nav>
 
 		
 		<div class="container">
 
-			<h1 class="contentHeading">About</h1>
+			<h1 class="contentHeading" id="aboutHeading">About</h1>
 			<div id="aboutContent">
 
 				<img src="assets\img\team.svg" alt="team">
 
-				<p>Welcome! I recently graduated with 
-						a Bachelor of Science degree in 
+				<p id="aboutP">Welcome! I recently graduated with 
+					a Bachelor of Science in 
 					Information Science from the University of Arkansas
 					at Little Rock. Currently, I've been working
 					for Walmart as an electronics associate for over 
@@ -49,27 +49,96 @@
 					<p>Fast and effecient.</p>
 				</div>
 				<div class="showcaseBullet">
-					<img src="assets\img\intuitive.svg" alt="intuitive">
-					<p>I've got an eye for intuitive layouts and design.</p>
+					<img src="assets\img\learn.svg" alt="learn">
+					<p>I'm a quick study, that means a fast ROI for you.</p>
 				</div>
 				<div class="showcaseBullet">
 					<img src="assets\img\responsive.svg" alt="responsive">
 					<p>Preference for responsive code.</p>
 				</div>
 			</div>
+
+			<h1 class="contentHeading">Skills</h1>
+			<div id="skills">
+				<ul>
+					<li>Html</li>
+					<li>CSS / SASS</li>
+					<li>Bootstrap</li>
+					<li>Javascript / ES5+</li>
+					<li>Git / Github</li>
+					<li>NPM, Webpack, Babel</li>
+					<li>Familiarity with Windows / Linux and their CLI</li>
+					<li>Some projects with PHP / MySQL in college</li>
+					<li>Currently studying React, PHP, MySQL</li>
+				</ul>
+			</div>
 		
 
 		
-			<h1 class="contentHeading">Portfolio</h1>
+			<h1 class="contentHeading" id="portfolioHeading">Portfolio</h1>
 			<div id="portfolioContent">
-
+				<div class="project">
+					<a href="https://e-m-wilson.github.io/capstone_project/">Arkansas Movie Database - Active Development, click for Github Pages link</a>
+				</div>
+				<div class="project">
+					<p>Future Projects - Full Stack car rental agency application.</p>
+				</div>
 			</div>
 			
 
 			
-			<h1 class="contentHeading">Contact</h1>
-			<div id="contactContent">
+			<h1 class="contentHeading" id="contactHeading">Contact</h1>
+			<div id="contactContent">	
+				<form
+					id="form1"
+					name="form1"
+					accept-charset="UTF-8"
+					autocomplete="off"
+					enctype="multipart/form-data"
+					method="post"
+					novalidate
+					action="https://emwilson.wufoo.com/forms/zo8qm1m0n7gi3g/#public"
+					>
 
+					<label for="Field1">First Name</label>
+					<input id="Field1" name="Field1" type="text" class="field text fn" value="" size="8" tabindex="0" placeholder=""/>
+					
+					
+					<label for="Field2">Last Name</label>
+					<input id="Field2" name="Field2" type="text" class="field text ln" value="" size="14" tabindex="0" placeholder=""/>
+						
+					
+					<label class="desc" id="title3" for="Field3">
+					Email
+					<span id="req_3" class="req">*</span>
+					</label>
+					
+					<input id="Field3" name="Field3" type="email" spellcheck="false" class="field text medium" value="" maxlength="255" tabindex="0"       placeholder="" required />
+					
+					
+					<label class="desc" id="title105" for="Field105">
+					Message
+					<span id="req_105" class="req">*</span>
+					</label>
+					
+		
+					<textarea id="Field105"
+					name="Field105"
+					class="field textarea medium"
+					spellcheck="true"
+					tabindex="0"
+					onkeyup=""
+					placeholder=""
+					required  ></textarea>
+					
+						
+					<input id="saveForm" name="saveForm" class="btTxt submit"
+					type="submit" value="Submit"
+					/>
+					
+					<input type="hidden" id="idstamp" name="idstamp" value="LIavoCV6/VlgPqJ7HmvLtKnOF2nguRqMXvwtXA40laE=" />
+					<input type="hidden" id="encryptedPassword" name="encryptedPassword" value="" />
+				</form>	
 			</div>
 		</div>
 	</body>
