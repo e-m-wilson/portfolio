@@ -39,10 +39,6 @@
   padding: 0 5%;
 }
 
-#splash #nameHighlight {
-  color: #D4B74C;
-}
-
 #splash a {
   margin-top: 20px;
   padding: 20px;
@@ -193,10 +189,12 @@ nav a:hover {
   width: 100px;
   border-radius: 10px;
   cursor: pointer;
+  -webkit-appearance: none;
 }
 
 .container #contactContent #form1 #saveForm:hover {
   transform: scale(0.9);
+  -webkit-appearance: none;
 }
 
 .container #contactContent #form1 #Field105 {

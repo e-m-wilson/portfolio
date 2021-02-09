@@ -190,9 +190,11 @@ nav {
         width: 100px;
         border-radius: 10px;
         cursor: pointer;
+        -webkit-appearance: none;
 
         &:hover {
           transform: scale(0.9);
+          -webkit-appearance: none;
         }
       }
 
