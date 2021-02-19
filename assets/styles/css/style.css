@@ -35,7 +35,7 @@
   font-size: 2rem;
   text-align: center;
   line-height: 1.6;
-  padding: 0 5%;
+  padding: 0 30px;
 }
 
 #splash a {
@@ -83,7 +83,7 @@ nav a:hover {
   align-items: center;
   width: 80%;
   margin: auto;
-  padding: 5%;
+  padding: 30px;
 }
 
 .container img {
@@ -108,7 +108,7 @@ nav a:hover {
 }
 
 .container #aboutContent p {
-  margin-top: 10%;
+  margin-top: 45px;
   background: #4C57D4;
   color: white;
   padding: 20px;
@@ -123,7 +123,7 @@ nav a:hover {
   display: flex;
   flex-direction: column;
   width: 100%;
-  margin: 10% auto;
+  margin: 100px 0 0;
   justify-content: space-around;
   align-items: center;
 }
@@ -133,9 +133,9 @@ nav a:hover {
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
-  margin: 0 5%;
   text-align: center;
   width: 200px;
+  margin: 0 20px;
 }
 
 .container #showcase .showcaseBullet p {
@@ -152,11 +152,11 @@ nav a:hover {
 }
 
 .container #skills ul li {
-  margin-bottom: 1rem;
+  margin-bottom: 1.5rem;
 }
 
 .container #portfolioContent .project {
-  margin: 10% 0;
+  margin: 30px 0;
   background: #4C57D4;
   color: white;
   padding: 1rem;
@@ -172,6 +172,14 @@ nav a:hover {
 .container #contactContent {
   max-width: 350px;
   width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.container #contactContent .LI-profile-badge {
+  margin-bottom: 30px;
 }
 
 .container #contactContent #form1 {
@@ -205,7 +213,7 @@ nav a:hover {
 
 .container #contactContent #form1 .field {
   width: 100%;
-  margin-bottom: 2rem;
+  margin-bottom: 30px;
 }
 
 @media (min-width: 750px) {
